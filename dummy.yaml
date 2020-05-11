@@ -1,9 +1,8 @@
-nginx:
-  server:
-    name: example.com
----
 spring:
-  profiles: development
-nginx:
-  server:
-    name: develop.com
+  application:
+    name: foo
+  profiles:
+    active: dev
+env:
+  foo: bar
+  baz: bingo
